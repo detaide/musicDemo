@@ -1,0 +1,122 @@
+
+@color-grey : #242424;
+@color-black:#000;
+@color-white:#fff;
+@color-red: #c20c0b;
+@color-blue-deep-1:#3679da;
+@color-blue-deep-2:#3484cf;
+@color-progressBar-line: hsla(0,0%,88.2%,.8);
+@color-progressBar-on: #fff;
+@color-text-grep-light: hsla(0,0%,88.2%,.8);
+@color-button-grey:#c9c9c9;
+@color-text-grey: #c9c9c9;
+@color-text-grey-light: #e5e2e2;
+@color-cyan:rgb(73, 102, 103);
+@color-text-green: #31c27c;
+@color-background-green:#31c27c;
+
+*{
+    box-sizing: border-box;
+    
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+}
+
+.avtor-hot, .avtor-logo, .avtor-search{
+    background-image: url('@Pictures/logo.png');
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.avtor-logo{
+    width: 12vw;
+    height: 5vw;
+    background-position: 0 0;
+}
+
+.avtor-hot{
+    width: 2vw;
+    height: 2vw;
+    background-position: 50px 10px;
+}
+
+.avtor-search{
+    width: 0.8vw;
+    height: 0.8vw;
+    background-position: -10px -108px;
+}
+
+.m-button{
+    cursor: pointer;
+    transition: transform 0.4s linear;
+}
+
+.m-button:active{
+    transform: scale(0.8);
+}
+
+.unselecetable{
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+
+.scrollbar{
+    &::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        margin: 10px 0;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.m-checkbox{
+    appearance: none; /* 隐藏原生复选框 */
+    background-color: hsla(0, 0%, 100%, .2); /* 默认背景颜色 */
+    // width: 16px; /* 设置宽度和高度 */
+    // height: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:checked::before{
+        position: absolute;
+        content: '';
+        // width: 10px;
+        // height: 10px;
+        background-color: #fff;
+    }
+
+    &:hover{
+        border: 1px solid #fff;
+    }
+}
+
+.m-circle{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

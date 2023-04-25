@@ -4,20 +4,9 @@ import {App} from 'vue'
 
 const routes : RouteRecordRaw[] = [
     {
-        path:'/demo',
-        name: 'Root',
-        component:()=>import('@/Demo/demo.vue'),
-        
-    },
-    {
         path:'/play',
         name: 'play',
         component:()=>import('@Components/players/player.vue'),
-    },
-    {
-        path:'/unit',
-        name:'unit',
-        component:()=>import('@/Demo/demoUnit.vue')
     },
     {
         path:'/albumDetail',

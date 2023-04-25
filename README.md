@@ -1,18 +1,35 @@
-# Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+本项目仅仅作为交流学习使用！！！
 
-## Recommended IDE Setup
+本项目仅仅作为交流学习使用！！！
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+本项目仅仅作为交流学习使用！！！
 
-## Type Support For `.vue` Imports in TS
+项目使用方案为vite构建的vue3 + pinia
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+这是一个练手的项目，没有前端经验，在练习Github上的50天前端项目(https://github.com/bradtraversy/50projects50days) 当做到Movie App的时候用python爬了豆瓣一个页面，突发奇想看看有没有什么API，然后找到了站上的网易云音乐 API(https://github.com/Binaryify/NeteaseCloudMusicApi)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+仿照着QQ音乐的页面风格，并且想要学习一下优质的代码风格，照猫画虎的学习了https://github.com/Chanzhaoyu/chatgpt-web的风格
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+由于第一次使用ts，没想到类型检查居然这么严格，打包过程中把代码给搞出了点bug，现在这份是没打包之前的备份(还好备份了)
+
+代码内部还是比较臃肿的，尝试了很多方案，是一个非常不成熟的代码片段，当前仅是1.0版本，说不定回头看会觉得这就是shit山，不过好处就是shit山的框架在我个人看来已经搭建好了
+
+请在vite.config.ts中修改target为自己部署的地址，API来源网易云音乐 API(https://github.com/Binaryify/NeteaseCloudMusicApi)
+
+然后
+```
+npm install
+
+npm run dev --port xxxx
+```
+其中xxxx为端口号，应该就可以运行了
+
+运行没有设立根目录，访问ip:port/search访问
+当前三个路由为
+
+/search
+
+/play
+
+/mv

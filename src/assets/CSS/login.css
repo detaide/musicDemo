@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .backgnd {
+    background: #222;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .backgnd form {
+    display: flex;
+    flex-direction: column;
+  }
+  .backgnd h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 0.2em;
+  }
+  .backgnd input {
+    height: 40px;
+    width: 300px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .backgnd input:focus {
+    color: #2196f3;
+    font-size: 0.85em;
+    transition: 0.5s;
+  }
+  .backgnd i {
+    height: 3px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #8bdeda, #43add0, #998ee0, #e17DC2, #8bdeda);
+    animation: animate 2s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 300px;
+    }
+  }
+  .backgnd .check {
+    display: flex;
+    flex-direction: row;
+  }
+  .backgnd .check button {
+    flex-grow: 2;
+    background: linear-gradient(20deg, #9c88ff, #3cadeb, #9c88ff);
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    animation: submits 2s linear infinite;
+    border: none;
+    cursor: pointer;
+  }
+  .backgnd .check button:last-child {
+    margin-left: 30px;
+  }
+  @keyframes submits {
+    0% {
+      background-position-x: 0px;
+    }
+    100% {
+      background-position-x: 300px;
+    }
+  }
+  

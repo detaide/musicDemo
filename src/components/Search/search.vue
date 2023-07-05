@@ -1,7 +1,11 @@
 <template>
     <div class="searchContainer">
+<<<<<<< HEAD
         <!-- <div class="mod-user"></div> -->
         <status class="mod-user"/>
+=======
+        <div class="mod-user"></div>
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
         <div class="mod-search">
             <input type="text" class="search" v-model="search">
             <div class="searchBtn m-button" @click="searchHandler"><i class="fa fa-search"></i></div>
@@ -31,7 +35,10 @@ import { onMounted, ref, watch } from "vue";
 import {api} from '@/api'
 import {useEventStore} from '@/store'
 import { useRouter } from "vue-router";
+<<<<<<< HEAD
 import status  from '@Components/global/status.vue'
+=======
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
 
 const router = useRouter()
 const search = ref('三体')
@@ -66,8 +73,13 @@ onMounted(()=>{
 
     .mod-user{
         width: 100%;
+<<<<<<< HEAD
         height: 4%;
         // border: 1p solid black;
+=======
+        height: 8%;
+        border: 1p solid black;
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
     }
 
     .mod-search{

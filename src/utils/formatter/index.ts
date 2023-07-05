@@ -36,7 +36,10 @@ export function LyricFormatter(lyric : string) : lyricFormatter {
 }
 
 export function timeStampFormatter(time : number,format : string){
+<<<<<<< HEAD
     if(!time) return '未知'
+=======
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
     const date = new Date(time)
     const year = date.getFullYear().toString()
     const month = ('0' + (date.getMonth() + 1)).slice(-2)

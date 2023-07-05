@@ -54,6 +54,7 @@ const routes : RouteRecordRaw[] = [
         path:'/mv',
         name : 'mvVideo',
         component : () => import("@Components/Search/mvVideo.vue")
+<<<<<<< HEAD
     },
     {
         path:'/demo',
@@ -90,6 +91,8 @@ const routes : RouteRecordRaw[] = [
                 component : () => import("@Components/server/followed.vue")
             }
         ]
+=======
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
     }
 ]
 

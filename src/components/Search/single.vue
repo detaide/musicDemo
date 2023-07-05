@@ -24,7 +24,11 @@
                 <div class="playBtn m-circle"  @click="addToPlay(index)" v-show="index == currHover"><i class="fa fa-play" ></i></div>
                 <input type="checkbox" class="m-checkbox"  v-show="isBulk" v-model="item.check" >
                 <div class="index">{{index +1}}</div>
+<<<<<<< HEAD
                 <div class="music-name" @click="jumpToDetail(index)">{{item.musicName}}</div>
+=======
+                <div class="music-name" @click="addToPlay(index)">{{item.musicName}}</div>
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
                 <div class="singer">{{item.singer}}</div>
                 <div class="album">{{item.album.name}}</div>
                 <div class="length">{{item.lengthFormatter}}</div>
@@ -39,7 +43,11 @@ import {api} from '@/api'
 import {getSearchSingleData} from '@/utils/useUnits'
 import {useEventStore} from '@/store'
 import { useRouter } from "vue-router"
+<<<<<<< HEAD
 import {useGeneralStore, type MusicState, useMusicStore, useContentStore} from '@/store'
+=======
+import {useGeneralStore, type MusicState, useMusicStore} from '@/store'
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
 import {eventBus} from '@/utils/general'
 
 
@@ -65,7 +73,10 @@ const event = useEventStore()
 const router = useRouter()
 const musicStore = useMusicStore()
 const generalStore = useGeneralStore()
+<<<<<<< HEAD
 const contentStore = useContentStore()
+=======
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
 
 const head = reactive([
     {
@@ -102,6 +113,7 @@ const addToPlay = (index)=>{
 
 }
 
+<<<<<<< HEAD
 const jumpToDetail = (index : any) =>{
     // console.log(data.value[index]?.musicId)
     contentStore.setCurrId(data.value[index]?.musicId)
@@ -111,6 +123,8 @@ const jumpToDetail = (index : any) =>{
     window.open('/contents', 'contents')
 }
 
+=======
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
 const hoverEnterHandler = (index)=>{
     currHover.value = index
 }

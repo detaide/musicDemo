@@ -25,6 +25,7 @@ export default defineConfig(({ mode, command})=>{
       open:false,
       proxy:{
         '/api':{
+<<<<<<< HEAD
           target: 'http://47.113.146.85:3000/',
           changeOrigin:true,
           rewrite: path=> path.replace('/api/','/')
@@ -33,6 +34,12 @@ export default defineConfig(({ mode, command})=>{
           target: 'http://localhost:8080/',
           changeOrigin:true,
           rewrite: path=> path.replace('/server/','/')
+=======
+          
+          target: 'x.x.x.x:xxxx',
+          changeOrigin:true,
+          rewrite: path=> path.replace('/api/','/')
+>>>>>>> 4d91cab52acf8870f29b2b64b25fc8cb27d1d99b
         }
       }
     },
